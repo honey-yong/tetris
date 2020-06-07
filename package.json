@@ -1,0 +1,23 @@
+{
+  "name": "tetris",
+  "version": "1.0.0",
+  "description": "tetris game client",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server/server-local.js",
+    "build": "echo build.",
+    "deploy": "npm run build && cross-env NODE_ENV=production sls deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yong",
+  "license": "ISC",
+  "dependencies": {
+    "aws-serverless-express": "3.3.6",
+    "compression": "1.7.4",
+    "cross-env": "5.2.0",
+    "ejs": "3.1.3",
+    "express": "4.17.1",
+    "serverless-express": "2.0.11"
+  },
+  "devDependencies": {}
+}
